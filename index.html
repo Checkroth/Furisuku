@@ -3,46 +3,101 @@
 <link rel="stylesheet" type="text/css" href="reset.css" />
 <link rel="stylesheet" type="text/css" href="main.css" />
 <meta charset="utf-8" />
+
+<script type="text/javascript">
+	var setting = window.location.search.substring(0);
+	var fullAddr = location.href;
+	var addr = fullAddr.substring(0, fullAddr.length - setting.length);
+	if ((setting != '?english') && (setting != '?nihongo'))
+	{
+		location.href = addr + '?nihongo';
+		var lang = 0;
+	}
+	else if(setting == '?nihongo')
+	{
+		var langswitch = '?english';
+		var lang = 0;
+	}
+	else
+	{
+		var langswitch = '?nihongo';
+		var lang = 1;
+	}
+
+	var header = new Array();
+	header[0] = "ふりすく仙台";
+	header[1] = "Furisuku Sendai";
+
+	var banner = new Array();
+	banner[0] = "トップページ";
+	banner[1] = "Home Page";
+
+	var index = new Array();
+	index[0] = "トップ";
+	index[1] = "Home";
+	
+	var about = new Array();
+	about[0] = "何ですか？";
+	about[1] = "About";
+	
+	var lesson = new Array();
+	lesson[0] = "従業";
+	lesson[1] = "Lesson";
+
+	var photo = new Array();
+	photo[0] = "写真";
+	photo[1] = "Photos";
+
+	var entrance = new Array();
+	entrance[0] = "入会"
+	entrance[1] = "Admission";
+
+	var language = new Array();
+	language[0] = "English";
+	language[1] = "日本語";
+
+	var content = new Array();
+	content[0] = "ウェ楣 しょぢゅ儯ひゅ秦 ぽ栧捯セ饦 れ亜襃饊ざ 骣リュ갤, 谣ヴ 滣砥び ぽ栧捯セ饦 褤榯駣期裌 誧ビュやウァ骣, しゅ楺夺 篞来 にㄦ㠨頨だ 来ぎゃみゃペ狥 ア馺ひゃびゅぢゃ ぞりゃ蝥䨦ゔ ほ覌堦びょヂュ しゅ楺 覎槣お 妦フィェウィ よさ 蟦えヴィェ榜饨 槣お諤たぱ 覧府䝧ぶゆ 盥ち 駤禧驩 すま䨩妦フィェ 来ぎゃみゃペ狥, びゃ楚ヒェも誨 こッ稣勯覎 儯ひゅ ぢゃ娩䛣, 詧けゝ にㄦ㠨頨だ ぽ栧捯セ饦 椦饣儦み禤 窨滣ひゅ秦詪 䨩妦 ウェ楣じゃっ綩 焣グ鰦壎ふ, 䦎ひタ 襩るりゅ馣よ 褤榯駣期裌 ア馺, ヒャねブ すま䨩妦フィェ 詪䝣檨覦フョ ヂャじょ 来ぎゃみゃ 窨滣 ちソ苦がỦ ヂャじょ	てを篞 娩䛣㦵樊げ, 砥びしゅ楺夺 磊わ㛥駜ちゅ 誧ビュやウァ骣 馣よさ けゝ 蟦えヴィェ榜饨 詧けゝ穤あ ぞりゃ んゑびゃ 㠤ぎょ 䣃䦎ひタ韩 祧フュべど润 誧ビュやウァ骣 解觊グェ, 以楜择 祧フュべど润 軣짦じゅ䦞ぴ ヒェも, 谧ぺみょ ぺみょ䦧ユ盥 蟦えヴィェ榜饨 リュ갤襦ぜꨞ ぴ以"
+	content[1] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, adipiscing et porta vel, lobortis in urna. Duis pretium nibh a arcu convallis blandit. Phasellus vestibulum, metus et suscipit ullamcorper, massa nibh vestibulum ligula, eu auctor erat urna in lacus. Phasellus sit amet vulputate sem. Curabitur at velit tortor, semper vestibulum dolor. Morbi congue orci nec lorem bibendum tristique. Mauris interdum, erat ut molestie tristique, mauris ante feugiat elit, ut placerat nisi nisi at lectus. Aliquam semper aliquet sem vel lacinia. Ut ut ipsum risus. Proin aliquet mollis arcu aliquam sodales. Quisque orci sapien, rhoncus semper venenatis ullamcorper, varius a dui. Quisque at elit non velit pellentesque placerat. Integer at nunc turpis. Nam eget nulla massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam suscipit dolor bibendum augue dignissim et porttitor odio interdum. Nulla non quam consectetur purus sollicitudin semper. Aliquam tempor suscipit libero eu vestibulum. Duis in nisl magna, quis consectetur nisl. Quisque pretium suscipit massa, quis tempor odio elementum sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent eleifend placerat orci, et hendrerit nisi mollis quis. Cras dignissim, orci vitae interdum sodales, purus massa pretium odio, sed sagittis purus arcu id mauris. Donec sed feugiat sapien. Nam vitae odio elit, a tempus urna. Aliquam eget augue dolor, ut lobortis metus. Suspendisse non porta nibh. Nunc nec nulla vitae massa aliquam porta."
+</script>
 </head>
 
 <body bgcolor="#4C1b1b">
 
 <div class='header'>
-Furisuku Sendai
+<script type="text/javascript">document.write(header[lang])</script>
 </div>
 
 <div class='banner'>
 <div class='banner-text'>
-Main Page
+<script type="text/javascript">document.write(banner[lang])</script>
 </div>
 </div>
 
 
 <div class='button-container'>
 <div class='button'>
-<a href="index.html">Home</a>
+<script type="text/javascript">document.write("<a href=\"index.html" + setting + "\">" + index[lang] + "</a>")</script>
 </div>
 <div class='button'>
-<a href="about.html">About</a>
+<script type="text/javascript">document.write("<a href=\"about.html" + setting + "\">" + about[lang] + "</a>")</script>
 </div>
 <div class='button'>
-<a href="lesson.html">Lesson</a>
+<script type="text/javascript">document.write("<a href=\"lesson.html" + setting + "\">" + lesson[lang] + "</a>")</script>
 </div>
 <div class='button'>
-<a href="photo.html">Photo</a>
+<script type="text/javascript">document.write("<a href=\"photo.html" + setting + "\">" + photo[lang] + "</a>")</script>
 </div>
 <div class='button'>
-<a href="entrance.html">入会</a>
+<script type="text/javascript">document.write("<a href=\"entrance.html" + setting + "\">" + entrance[lang] + "</a>")</script>
 </div>
 <div class='button'>
-<a href="language">日本語</a>
+<script type="text/javascript">document.write("<a href=\"index.html" + langswitch + "\">" + language[lang] + "</a>")</script>
 </div>
 </div>
 
 <div class='content'>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, adipiscing et porta vel, lobortis in urna. Duis pretium nibh a arcu convallis blandit. Phasellus vestibulum, metus et suscipit ullamcorper, massa nibh vestibulum ligula, eu auctor erat urna in lacus. Phasellus sit amet vulputate sem. Curabitur at velit tortor, semper vestibulum dolor. Morbi congue orci nec lorem bibendum tristique. Mauris interdum, erat ut molestie tristique, mauris ante feugiat elit, ut placerat nisi nisi at lectus. Aliquam semper aliquet sem vel lacinia. Ut ut ipsum risus. Proin aliquet mollis arcu aliquam sodales. Quisque orci sapien, rhoncus semper venenatis ullamcorper, varius a dui. Quisque at elit non velit pellentesque placerat.
-
-Integer at nunc turpis. Nam eget nulla massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam suscipit dolor bibendum augue dignissim et porttitor odio interdum. Nulla non quam consectetur purus sollicitudin semper. Aliquam tempor suscipit libero eu vestibulum. Duis in nisl magna, quis consectetur nisl. Quisque pretium suscipit massa, quis tempor odio elementum sed. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent eleifend placerat orci, et hendrerit nisi mollis quis. Cras dignissim, orci vitae interdum sodales, purus massa pretium odio, sed sagittis purus arcu id mauris. Donec sed feugiat sapien. Nam vitae odio elit, a tempus urna. Aliquam eget augue dolor, ut lobortis metus. Suspendisse non porta nibh. Nunc nec nulla vitae massa aliquam porta.
+<script type="text/javascript">document.write(content[lang]);</script>
 
 </div>
 
