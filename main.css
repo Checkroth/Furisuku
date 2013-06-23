@@ -12,10 +12,8 @@ transition:color .3s;
 -webkit-transition:color .3s;
 -o-transition:color .3s;
 }
-a:visited{
-color:#F6E497;
-}
-a:link{
+
+a:visited, a:link{
 color:#F6E497;
 }
 a:hover{
@@ -56,17 +54,78 @@ width:133.33px;
 height:50px;
 float:left;
 color:#F6E497;
-text-shadow:1px 1px;
+#text-shadow:1px 1px;
 text-align:center;
+font-weight:bold;
 }
 
 .button-container {
 width:800px;
 margin:15px auto 0;
+height:50px;
 }
 
 .content {
 width:700px;
-margin:0 auto;
+margin:0 auto 25px;
 color:#F6E497;
+font-size:23px;
+overflow:visible;
+}
+
+.schedule {
+width:350px;
+font-size:18px;
+float:left;
+margin:10px 0 0;
+}
+
+.schedule-head {
+font-size:20px;
+font-weight:bold;
+border-bottom:2px solid #f6e497;
+}
+
+.schedule-title {
+font-size:25px;
+color:#4C1B1B;
+background-color:#FCFAE1;
+width:700px;
+height:27px;
+margin:20px auto 0;
+font-weight:bold;
+text-align:center;
+}
+
+.schedule-container {
+width:700px;
+overflow:hidden;
+border-bottom:10px solid #FCFAE1;
+padding:10px 0;
+margin:0 0 15px;
+}
+
+.picture-container {
+width:700px;
+height:200px;
+background-color:#B9121B;
+display:block;
+position:relative;
+font-weight:bold;
+color:#4C1B1B;
+}
+
+.picture-text-container, .picture-text {
+width:700px;
+height:75;
+}
+
+.picture-text-container {
+background-color:rgba(252,250,225,.8);
+position:absolute;
+bottom:0;
+}
+
+.picture-text{
+padding:15px 0 0 ;
 }
